@@ -1,0 +1,441 @@
+@media screen and (max-width:1400px) {
+    .box-choose {
+        margin-right: 31px;
+    }
+}
+
+
+
+
+@media screen and (max-width:1399px) {
+    .car img {
+        width: 388px;
+    }
+
+    .footer-img1 img {
+        height: 148px;
+    }
+
+    .bmw-txt {
+        margin-right: 0;
+    }
+
+    .shadow-slider-box {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .logo-bmw {
+        width: 432px;
+    }
+
+    .car img {
+        width: 372px
+    }
+
+    .search input {
+        width: 304px;
+    }
+
+    .dropbtn {
+        width: 120px;
+    }
+
+    .entrance {
+        margin-right: 6px;
+    }
+
+    .search-login {
+        margin-left: 117px;
+    }
+}
+
+@media screen and (max-width:1326px) {
+    .search-login {
+        margin-left: -37px;
+    }
+
+    .lorem-bmw p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+@media screen and (max-width:1322px) {
+    .logo-bmw {
+        width: 403px;
+        padding: 23px 0px 23px 14px;
+    }
+
+    .bmw-txt h1 {
+        font-size: 53px;
+    }
+
+    .search-login {
+        margin-left: 39px;
+    }
+
+    .search input {
+        width: 360px;
+    }
+
+    .dropbtn {
+        width: 167px;
+    }
+
+    .menu {
+        right: 13%;
+    }
+}
+
+@media screen and (max-width:1214px) {
+    .footer-img1 img {
+        height: 124px;
+    }
+
+    .shadow-slider-box {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .box-choose-cars {
+        padding: 0;
+    }
+    .btn-price {
+        padding: 5px 0;
+    }
+
+    .logo-bmw {
+        right: calc(100% - 307px);
+    }
+
+    .search input {
+        width: 312px;
+    }
+
+    .dropbtn {
+        width: 120px;
+    }
+
+    .car img {
+        width: 362px;
+    }
+
+    .bg-grey {
+        padding: 0 23px 43px 23px;
+        margin: 0px 26px;
+    }
+
+    .funny-icon {
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width:1198px) {
+    .slick-dots {
+        left: 238px;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    .btn-price {
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width:1062px) {
+    .click-box {
+        top: 63%;
+      }
+    .box-main-mid {
+        margin-top: 54px;
+      }
+
+    .variant {
+        margin-top: 56px;
+    }
+   
+    .search-menu-mobile {
+        background-color: #fff;
+        box-shadow: var(--shadow);
+        color: #646464;
+        border-radius: 10px;
+        padding: 31px 30px;
+    }
+
+    .input-search-menu {
+        margin-bottom: 16px;
+        border-bottom: 3px solid #ddd;
+        padding-bottom: 17px;
+    }
+
+    .input-search-menu input:focus {
+        outline: none;
+    }
+
+    .btn-menu-mobile button a {
+        color: #646464;
+    }
+
+    .search-menu-mobile.show {
+        display: block;
+    }
+
+
+    .search-login {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: var(--shadow);
+        color: #646464;
+        border-radius: 10px;
+        padding: 31px 30px;
+    }
+
+    .txt-menu {
+        padding-right: 30px;
+        padding-top: 13px;
+        font-size: 20px;
+    }
+
+    .item-mobile-menu:not(:last-child) {
+        border-bottom: 3px solid #ddd;
+    }
+
+    .item-mobile-menu {
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    #mobile-menu.active {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .srch {
+        display: block;
+        position: relative;
+    }
+
+    .srch button {
+        position: absolute;
+        top: 78px;
+        right: 165px;
+    }
+
+    .list-icon {
+        display: block;
+        position: relative;
+    }
+
+    .list-icon button {
+        position: absolute;
+        top: 71px;
+        right: 106px;
+    }
+}
+
+@media screen and (max-width:994px) {
+    .car img {
+        width: 290px;
+    }
+
+    .footer-img1 img {
+        margin-bottom: 20px;
+    }
+
+    .txt-yellow {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .slick-dots {
+        left: 149px;
+    }
+    .head-main {
+        flex-wrap: wrap;
+    }
+
+    .box-choose {
+        flex-wrap: wrap;
+    }
+
+    .off-on-box {
+        width: calc(50% - 5px);
+        margin: 2px;    padding: 0 17px;
+    }
+
+    .box-choose-cars {
+        margin: 2px;    padding: 0 24px;
+    }
+
+    .box-choose {
+        margin-right: 3px;
+    }
+
+    .lorem-bmw p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+
+    .logo-bmw {
+        width: 294px;
+        padding: 18px 10px;
+        right: calc(100% - 209px);
+    }
+
+    .bmw-txt {
+        margin-right: 0;
+        margin-top: 23px;
+    }
+
+    .bmw-txt h1 {
+        font-size: 32px;
+    }
+
+    .pic-bmw img {
+        width: 78px;
+        height: auto;
+    }
+
+    .icon-off-on {
+        padding: 0;
+    }
+
+    .txt-box-choose {
+        padding-left: 14px;
+        padding-top: 7px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .label-cars {
+        top: 7px;
+    }
+    
+    .img-square {
+        padding-left: 7px;
+        padding-bottom: 5px;
+    }
+
+    .txt-box-choose {
+        padding-left: 0px;
+        margin-top: 0px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .btn-price {
+        padding: 5px 47px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .click-box {
+        top: 134%;
+      }
+    .txt-box-choose {
+        padding-left: 3px;
+    }
+
+    .big-box {
+        margin-bottom: 50px;
+    }
+
+    .logo-bmw {
+        width: 96%;
+        bottom: 100%;
+        left: 10px;
+        top: auto;
+        padding: 18px 0;
+        right: auto;
+    }
+
+    .bmw-txt h1 {
+        font-size: 32px;
+    }
+
+    .side-right {
+        margin-bottom: 189px;
+    }
+
+    .car img {
+        width: 389px;
+    }
+}
+
+@media screen and (max-width:767px)  {
+    .img-square {
+        padding-right: 8px;
+    }
+    
+    .footer-bottom {
+        margin-top: 77px;
+      }
+
+    .side-cars {
+        margin-bottom: 0;
+    }
+    .space-right {
+        padding-right: 11px;
+    }
+}
+
+
+@media screen and (max-width:760px) {
+    .side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .slick-dots {
+        left: 111px;
+      }
+}
+
+@media screen and (max-width:450px) {
+    .car img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .btn-price {
+        padding: 5px 20px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .txt-box-choose {
+        padding-top: 8px;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .btn-price {
+        padding: 5px 0;
+    }
+}

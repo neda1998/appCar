@@ -1,0 +1,2191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>project7</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/res.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body id="body">
+    <!-- start of header -->
+    <section>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav">
+                            <div class="logo">
+                                <img src="img/لوگو.png" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-icon">
+                    <button onclick="toggleMenu()" id="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="srch">
+                    <button id="srch" onclick="srch()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- create of menu in mobile size -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mobile-menu menu-small-screen" id="mobile-menu">
+                        <div class="d-flex flex-row item-mobile-menu">
+                            <div>
+                                <img src="img/Vector (4).png" alt="" />
+                            </div>
+                            <div class="txt-menu">
+                                <span> خانه </span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row item-mobile-menu">
+                            <div>
+                                <img src="img/Vector (4).png" alt="" />
+                            </div>
+                            <div class="txt-menu">
+                                <span> خانه </span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row item-mobile-menu">
+                            <div>
+                                <img src="img/Vector (5).png" alt="" />
+                            </div>
+                            <div class="txt-menu">
+                                <span> وانیار </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- create of menu in mobile size -->
+
+    <!-- create search of menu -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-menu-mobile menu-small-screenF" id="search-menu-mobile">
+                        <div class="d-flex flex-column">
+                            <div class="input-search-menu">
+                                <input type="text" name="" id="" placeholder="جستجو">
+                            </div>
+                            <div class="btn-menu-mobile">
+                                <button>
+                                    <a href="">
+                                        ثبت نام
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- create search of menu -->
+
+    <!-- start of menu -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="menu">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-row">
+                            <div class="home d-flex flex-column">
+                                <div>
+                                    <button>
+                                        <svg width="32" height="32" viewBox="0 0 43 43" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M38.795 16.5579C38.795 15.7295 38.1234 15.0579 37.295 15.0579C36.4666 15.0579 35.795 15.7295 35.795 16.5579H38.795ZM7.20498 16.5579C7.20498 15.7295 6.53341 15.0579 5.70498 15.0579C4.87655 15.0579 4.20498 15.7295 4.20498 16.5579H7.20498ZM26.9454 40.3654L26.6005 38.9056L26.9454 40.3654ZM16.0546 40.3654L16.3994 38.9056L16.0546 40.3654ZM27.6283 6.36416L26.5638 7.42105L27.6283 6.36416ZM39.9356 20.8879C40.5193 21.4758 41.469 21.4791 42.0569 20.8954C42.6448 20.3117 42.6481 19.362 42.0644 18.7741L39.9356 20.8879ZM15.3717 6.36416L16.4362 7.42105L15.3717 6.36416ZM0.935587 18.7741C0.351881 19.362 0.355247 20.3117 0.943106 20.8954C1.53096 21.4791 2.48071 21.4758 3.06441 20.8879L0.935587 18.7741ZM16.5566 35.194L15.0823 34.9173H15.0823L16.5566 35.194ZM16.5985 34.9707L18.0727 35.2475V35.2475L16.5985 34.9707ZM26.4015 34.9707L24.9273 35.2475L24.9273 35.2475L26.4015 34.9707ZM26.4434 35.194L27.9177 34.9173L27.9177 34.9173L26.4434 35.194ZM25.8155 40.0291L24.4611 39.3845H24.4611L25.8155 40.0291ZM24.2081 39.9162C23.8521 40.6642 24.1699 41.5592 24.9179 41.9152C25.666 42.2712 26.561 41.9534 26.917 41.2053L24.2081 39.9162ZM17.1845 40.0291L15.83 40.6737L15.83 40.6737L17.1845 40.0291ZM16.0831 41.2053C16.439 41.9534 17.334 42.2712 18.0821 41.9152C18.8301 41.5592 19.1479 40.6642 18.7919 39.9162L16.0831 41.2053ZM20.1156 31.1255L19.7146 29.6801L20.1156 31.1255ZM22.8844 31.1255L23.2854 29.6801H23.2854L22.8844 31.1255ZM35.795 16.5579V27.2143H38.795V16.5579H35.795ZM7.20498 27.2143V16.5579H4.20498V27.2143H7.20498ZM26.6005 38.9056C23.2456 39.6981 19.7543 39.6981 16.3994 38.9056L15.7097 41.8252C19.5182 42.7249 23.4818 42.7249 27.2902 41.8252L26.6005 38.9056ZM16.3994 38.9056C11.0199 37.6348 7.20498 32.7974 7.20498 27.2143H4.20498C4.20498 34.175 8.96316 40.2314 15.7097 41.8252L16.3994 38.9056ZM27.2902 41.8252C34.0368 40.2314 38.795 34.175 38.795 27.2143H35.795C35.795 32.7974 31.98 37.6348 26.6005 38.9056L27.2902 41.8252ZM26.5638 7.42105L39.9356 20.8879L42.0644 18.7741L28.6927 5.30727L26.5638 7.42105ZM14.3073 5.30727L0.935587 18.7741L3.06441 20.8879L16.4362 7.42105L14.3073 5.30727ZM28.6927 5.30727C27.2782 3.88271 26.1131 2.7048 25.0678 1.90163C23.9884 1.0722 22.8606 0.5 21.5 0.5V3.5C21.9343 3.5 22.4262 3.65516 23.2399 4.28045C24.0879 4.932 25.0895 5.93617 26.5638 7.42105L28.6927 5.30727ZM16.4362 7.42105C17.9105 5.93617 18.9121 4.932 19.7601 4.28045C20.5738 3.65516 21.0657 3.5 21.5 3.5V0.5C20.1394 0.5 19.0116 1.0722 17.9322 1.90163C16.8869 2.7048 15.7218 3.88271 14.3073 5.30727L16.4362 7.42105ZM18.0308 35.4707L18.0727 35.2475L15.1242 34.694L15.0823 34.9173L18.0308 35.4707ZM24.9273 35.2475L24.9692 35.4707L27.9177 34.9173L27.8758 34.694L24.9273 35.2475ZM24.4611 39.3845L24.2081 39.9162L26.917 41.2053L27.17 40.6737L24.4611 39.3845ZM15.83 40.6737L16.0831 41.2053L18.7919 39.9162L18.5389 39.3845L15.83 40.6737ZM24.9692 35.4707C25.2181 36.797 25.0398 38.1683 24.4611 39.3845L27.17 40.6737C28.0219 38.8835 28.2836 36.8669 27.9177 34.9173L24.9692 35.4707ZM15.0823 34.9173C14.7164 36.8669 14.9781 38.8835 15.83 40.6737L18.5389 39.3845C17.9602 38.1683 17.7819 36.797 18.0308 35.4707L15.0823 34.9173ZM20.5167 32.5709C21.1603 32.3923 21.8397 32.3923 22.4833 32.5709L23.2854 29.6801C22.117 29.3559 20.883 29.3559 19.7146 29.6801L20.5167 32.5709ZM27.8758 34.694C27.4233 32.2836 25.6462 30.3352 23.2854 29.6801L22.4833 32.5709C23.7324 32.9175 24.6842 33.9526 24.9273 35.2475L27.8758 34.694ZM18.0727 35.2475C18.3158 33.9526 19.2676 32.9175 20.5167 32.5709L19.7146 29.6801C17.3538 30.3352 15.5767 32.2836 15.1242 34.694L18.0727 35.2475Z"
+                                                fill="#FF3919" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <div class="txt-home">
+                                    <span> خانه </span>
+                                </div>
+                            </div>
+                            <div class="home d-flex flex-column">
+                                <div>
+                                    <button>
+                                        <svg width="32" height="32" viewBox="0 0 54 34" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-outside-1_280_1181" maskUnits="userSpaceOnUse" x="0" y="0"
+                                                width="35" height="34" fill="black">
+                                                <rect fill="white" width="35" height="34" />
+                                                <path
+                                                    d="M6.13333 25.8214C6.13333 28.6815 8.44653 31 11.3 31C14.1535 31 16.4667 28.6815 16.4667 25.8214C16.4667 22.9614 14.1535 20.6429 11.3 20.6429C8.44653 20.6429 6.13333 22.9614 6.13333 25.8214Z" />
+                                            </mask>
+                                            <path
+                                                d="M13.3667 5.10714L14.7089 5.77673L14.7089 5.77673L13.3667 5.10714ZM10.2667 11.3214L11.6089 11.991C11.5918 12.0253 11.5734 12.059 11.5537 12.0919L10.2667 11.3214ZM4.06667 25.8214L4.06666 24.3214H4.06667V25.8214ZM5.24091 24.3214C6.06934 24.3214 6.74091 24.993 6.74091 25.8214C6.74091 26.6499 6.06934 27.3214 5.24091 27.3214V24.3214ZM18.5333 27.3214C17.7049 27.3214 17.0333 26.6499 17.0333 25.8214C17.0333 24.993 17.7049 24.3214 18.5333 24.3214V27.3214ZM33 24.3214C33.8284 24.3214 34.5 24.993 34.5 25.8214C34.5 26.6499 33.8284 27.3214 33 27.3214V24.3214ZM16.4667 3.5C16.2909 3.5 16.1063 3.54989 15.8063 3.90314C15.4609 4.30988 15.1383 4.91602 14.7089 5.77673L12.0244 4.43756C12.4217 3.64112 12.8976 2.69369 13.5197 1.96115C14.1873 1.17511 15.1394 0.5 16.4667 0.5V3.5ZM14.7089 5.77673L11.6089 11.991L8.92441 10.6518L12.0244 4.43756L14.7089 5.77673ZM10.2667 11.3214C11.5537 12.0919 11.553 12.093 11.5524 12.0941C11.5521 12.0945 11.5514 12.0956 11.551 12.0963C11.5501 12.0979 11.5492 12.0994 11.5482 12.1009C11.5463 12.104 11.5444 12.1072 11.5424 12.1104C11.5384 12.1168 11.5342 12.1235 11.5298 12.1305C11.5209 12.1444 11.5111 12.1593 11.5004 12.1752C11.4789 12.2069 11.4535 12.2423 11.4239 12.2808C11.3646 12.3579 11.2885 12.4469 11.1929 12.5427C11.0006 12.7355 10.7345 12.9504 10.3764 13.1498C9.65392 13.5521 8.61966 13.8571 7.16667 13.8571V10.8571C8.19367 10.8571 8.70941 10.6443 8.91692 10.5288C9.02385 10.4692 9.06773 10.4253 9.06916 10.4238C9.07042 10.4226 9.06219 10.4307 9.04649 10.4511C9.03866 10.4612 9.02902 10.4744 9.0178 10.4909C9.01219 10.4992 9.00619 10.5083 8.99982 10.5183C8.99663 10.5233 8.99336 10.5285 8.98999 10.534C8.98831 10.5367 8.98661 10.5395 8.98488 10.5423C8.98402 10.5437 8.98315 10.5452 8.98228 10.5466C8.98184 10.5473 8.98118 10.5484 8.98096 10.5488C8.9803 10.5499 8.97964 10.551 10.2667 11.3214ZM7.16667 13.8571C6.48796 13.8571 5.47474 14.0303 4.68748 14.4848C3.97506 14.8961 3.5 15.4851 3.5 16.5H0.5C0.5 14.2006 1.74716 12.7182 3.18752 11.8867C4.55303 11.0983 6.12315 10.8571 7.16667 10.8571V13.8571ZM3.5 16.5V23.75H0.5V16.5H3.5ZM3.5 23.75C3.5 23.7269 3.4952 23.7565 3.53378 23.836C3.57146 23.9137 3.63576 24.0072 3.72533 24.097C3.81491 24.1868 3.90798 24.251 3.98478 24.2884C4.06347 24.3268 4.09161 24.3214 4.06666 24.3214L4.06667 27.3214C3.05423 27.3214 2.17764 26.7933 1.60157 26.2159C1.02516 25.6382 0.5 24.7611 0.5 23.75H3.5ZM4.06667 24.3214H5.24091V27.3214H4.06667V24.3214ZM18.5333 24.3214H33V27.3214H18.5333V24.3214ZM16.4667 0.5H33V3.5H16.4667V0.5ZM9.13333 25.8214C9.13333 27.0311 10.1099 28 11.3 28V34C6.78317 34 3.13333 30.3318 3.13333 25.8214H9.13333ZM11.3 28C12.4901 28 13.4667 27.0311 13.4667 25.8214H19.4667C19.4667 30.3318 15.8168 34 11.3 34V28ZM13.4667 25.8214C13.4667 24.6117 12.4901 23.6429 11.3 23.6429V17.6429C15.8168 17.6429 19.4667 21.311 19.4667 25.8214H13.4667ZM11.3 23.6429C10.1099 23.6429 9.13333 24.6117 9.13333 25.8214H3.13333C3.13333 21.311 6.78317 17.6429 11.3 17.6429V23.6429Z"
+                                                fill="#CDCDCD" mask="url(#path-1-outside-1_280_1181)" />
+                                            <mask id="path-3-outside-2_280_1181" maskUnits="userSpaceOnUse" x="19" y="0"
+                                                width="35" height="34" fill="black">
+                                                <rect fill="white" x="19" width="35" height="34" />
+                                                <path
+                                                    d="M47.8667 25.8214C47.8667 28.6815 45.5535 31 42.7 31C39.8465 31 37.5333 28.6815 37.5333 25.8214C37.5333 22.9614 39.8465 20.6429 42.7 20.6429C45.5535 20.6429 47.8667 22.9614 47.8667 25.8214Z" />
+                                            </mask>
+                                            <path
+                                                d="M40.6333 5.10714L39.2911 5.77673L39.2911 5.77673L40.6333 5.10714ZM43.7333 11.3214L42.3911 11.991C42.4082 12.0253 42.4266 12.059 42.4463 12.0919L43.7333 11.3214ZM49.9333 25.8214L49.9333 24.3214H49.9333V25.8214ZM48.7591 24.3214C47.9307 24.3214 47.2591 24.993 47.2591 25.8214C47.2591 26.6499 47.9307 27.3214 48.7591 27.3214V24.3214ZM35.4667 27.3214C36.2951 27.3214 36.9667 26.6499 36.9667 25.8214C36.9667 24.993 36.2951 24.3214 35.4667 24.3214V27.3214ZM21 24.3214C20.1716 24.3214 19.5 24.993 19.5 25.8214C19.5 26.6499 20.1716 27.3214 21 27.3214V24.3214ZM37.5333 3.5C37.7091 3.5 37.8937 3.54989 38.1937 3.90314C38.5391 4.30988 38.8617 4.91602 39.2911 5.77673L41.9756 4.43756C41.5783 3.64112 41.1024 2.69369 40.4803 1.96115C39.8127 1.17511 38.8606 0.5 37.5333 0.5V3.5ZM39.2911 5.77673L42.3911 11.991L45.0756 10.6518L41.9756 4.43756L39.2911 5.77673ZM43.7333 11.3214C42.4463 12.0919 42.447 12.093 42.4476 12.0941C42.4479 12.0945 42.4486 12.0956 42.449 12.0963C42.4499 12.0979 42.4508 12.0994 42.4518 12.1009C42.4537 12.104 42.4556 12.1072 42.4576 12.1104C42.4616 12.1168 42.4658 12.1235 42.4702 12.1305C42.4791 12.1444 42.4889 12.1593 42.4996 12.1752C42.5211 12.2069 42.5465 12.2423 42.5761 12.2808C42.6354 12.3579 42.7115 12.4469 42.8071 12.5427C42.9994 12.7355 43.2655 12.9504 43.6236 13.1498C44.3461 13.5521 45.3803 13.8571 46.8333 13.8571V10.8571C45.8063 10.8571 45.2906 10.6443 45.0831 10.5288C44.9762 10.4692 44.9323 10.4253 44.9308 10.4238C44.9296 10.4226 44.9378 10.4307 44.9535 10.4511C44.9613 10.4612 44.971 10.4744 44.9822 10.4909C44.9878 10.4992 44.9938 10.5083 45.0002 10.5183C45.0034 10.5233 45.0066 10.5285 45.01 10.534C45.0117 10.5367 45.0134 10.5395 45.0151 10.5423C45.016 10.5437 45.0168 10.5452 45.0177 10.5466C45.0182 10.5473 45.0188 10.5484 45.019 10.5488C45.0197 10.5499 45.0204 10.551 43.7333 11.3214ZM46.8333 13.8571C47.512 13.8571 48.5253 14.0303 49.3125 14.4848C50.0249 14.8961 50.5 15.4851 50.5 16.5H53.5C53.5 14.2006 52.2528 12.7182 50.8125 11.8867C49.447 11.0983 47.8769 10.8571 46.8333 10.8571V13.8571ZM50.5 16.5V23.75H53.5V16.5H50.5ZM50.5 23.75C50.5 23.7269 50.5048 23.7565 50.4662 23.836C50.4285 23.9137 50.3642 24.0072 50.2747 24.097C50.1851 24.1868 50.092 24.251 50.0152 24.2884C49.9365 24.3268 49.9084 24.3214 49.9333 24.3214L49.9333 27.3214C50.9458 27.3214 51.8224 26.7933 52.3984 26.2159C52.9748 25.6382 53.5 24.7611 53.5 23.75H50.5ZM49.9333 24.3214H48.7591V27.3214H49.9333V24.3214ZM35.4667 24.3214H21V27.3214H35.4667V24.3214ZM37.5333 0.5H21V3.5H37.5333V0.5ZM44.8667 25.8214C44.8667 27.0311 43.8901 28 42.7 28V34C47.2168 34 50.8667 30.3318 50.8667 25.8214H44.8667ZM42.7 28C41.5099 28 40.5333 27.0311 40.5333 25.8214H34.5333C34.5333 30.3318 38.1832 34 42.7 34V28ZM40.5333 25.8214C40.5333 24.6117 41.5099 23.6429 42.7 23.6429V17.6429C38.1832 17.6429 34.5333 21.311 34.5333 25.8214H40.5333ZM42.7 23.6429C43.8901 23.6429 44.8667 24.6117 44.8667 25.8214H50.8667C50.8667 21.311 47.2168 17.6429 42.7 17.6429V23.6429Z"
+                                                fill="#CDCDCD" mask="url(#path-3-outside-2_280_1181)" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                                <div class="txt-home">
+                                    <span> خودرو </span>
+                                </div>
+                            </div>
+                            <div class="home d-flex flex-column">
+                                <div>
+                                    <button>
+                                        <svg width="32" height="32" viewBox="0 0 45 43" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.83164 28.3277L4.28777 27.9676L2.83164 28.3277ZM2.83164 14.6723L4.28777 15.0324L2.83164 14.6723ZM42.1684 14.6723L43.6245 14.3122L42.1684 14.6723ZM42.1684 28.3277L40.7122 27.9676L42.1684 28.3277ZM29.2231 40.2611L28.8973 38.7969L29.2231 40.2611ZM15.7769 40.2611L16.1027 38.7969L15.7769 40.2611ZM15.7769 2.73894L16.1027 4.20314L15.7769 2.73894ZM29.2231 2.73894L29.5489 1.27474V1.27474L29.2231 2.73894ZM14.7975 40.0432L14.4718 41.5074L14.7975 40.0432ZM30.2025 40.0432L30.5282 41.5074L30.2025 40.0432ZM30.2025 2.95684L29.8767 4.42104L30.2025 2.95684ZM14.7975 2.95684L14.4718 1.49264L14.7975 2.95684ZM15.0689 16.7064C14.3957 16.2236 13.4586 16.3778 12.9757 17.0509C12.4928 17.7241 12.6471 18.6612 13.3202 19.1441L15.0689 16.7064ZM19.7415 21.9043L20.6158 20.6855L19.7415 21.9043ZM25.2585 21.9043L26.1329 23.1232V23.1232L25.2585 21.9043ZM31.6798 19.1441C32.3529 18.6612 32.5072 17.7241 32.0243 17.0509C31.5414 16.3778 30.6043 16.2236 29.9311 16.7064L31.6798 19.1441ZM15.1233 4.42104L16.1027 4.20314L15.4512 1.27474L14.4718 1.49264L15.1233 4.42104ZM28.8973 4.20314L29.8767 4.42104L30.5282 1.49264L29.5489 1.27474L28.8973 4.20314ZM29.8767 38.579L28.8973 38.7969L29.5488 41.7253L30.5282 41.5074L29.8767 38.579ZM16.1027 38.7969L15.1233 38.579L14.4718 41.5074L15.4512 41.7253L16.1027 38.7969ZM4.28777 27.9676C3.23741 23.7204 3.23741 19.2796 4.28777 15.0324L1.37551 14.3122C0.208165 19.0324 0.208164 23.9676 1.37551 28.6878L4.28777 27.9676ZM40.7122 15.0324C41.7626 19.2796 41.7626 23.7204 40.7122 27.9676L43.6245 28.6878C44.7918 23.9676 44.7918 19.0324 43.6245 14.3122L40.7122 15.0324ZM28.8973 38.7969C24.6835 39.7344 20.3165 39.7344 16.1027 38.7969L15.4512 41.7253C20.0941 42.7582 24.9059 42.7582 29.5488 41.7253L28.8973 38.7969ZM16.1027 4.20314C20.3165 3.26562 24.6835 3.26562 28.8973 4.20314L29.5489 1.27474C24.9059 0.241754 20.0941 0.241753 15.4512 1.27474L16.1027 4.20314ZM15.1233 38.579C9.80253 37.3952 5.60326 33.2869 4.28777 27.9676L1.37551 28.6878C2.96305 35.1072 8.03395 40.075 14.4718 41.5074L15.1233 38.579ZM30.5282 41.5074C36.966 40.075 42.037 35.1072 43.6245 28.6878L40.7122 27.9676C39.3967 33.2869 35.1975 37.3952 29.8767 38.579L30.5282 41.5074ZM29.8767 4.42104C35.1975 5.60483 39.3967 9.71312 40.7122 15.0324L43.6245 14.3122C42.037 7.89284 36.9661 2.92496 30.5282 1.49264L29.8767 4.42104ZM14.4718 1.49264C8.03396 2.92496 2.96305 7.89283 1.37551 14.3122L4.28777 15.0324C5.60326 9.71311 9.80253 5.60483 15.1233 4.42104L14.4718 1.49264ZM13.3202 19.1441L18.8671 23.1232L20.6158 20.6855L15.0689 16.7064L13.3202 19.1441ZM26.1329 23.1232L31.6798 19.1441L29.9311 16.7064L24.3842 20.6855L26.1329 23.1232ZM18.8671 23.1232C21.0399 24.6818 23.9601 24.6818 26.1329 23.1232L24.3842 20.6855C23.2567 21.4943 21.7433 21.4943 20.6158 20.6855L18.8671 23.1232Z"
+                                                fill="#CDCDCD" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="txt-home">
+                                    <span> وانیار </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column search-login">
+                            <div class="d-flex flex-row">
+                                <div class="position-relative">
+                                    <div class="dropdown">
+                                        <button class="dropbtn" onclick="chooseLanguage()">فارسی</button>
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <a href="">
+                                                انگلیسی
+                                            </a>
+                                            <a href="">
+                                                فرانسه
+                                            </a>
+                                            <a href="" class="kurdish-language">
+                                                کوردی
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="chevron-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="login d-flex flex-row">
+                                    <div class="d-flex flex-row person">
+                                        <span> ثبت نام </span>
+                                        <button class="person-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px"
+                                                fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="d-flex flex-row entrance">
+                                        <span> ورود </span>
+                                        <button class="inline-txt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="23px" height="23px"
+                                                fill="currentColor" class="bi bi-box-arrow-in-right"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search">
+                                <input type="text" placeholder="جستجو" />
+                                <button class="box-search">
+                                    <svg width="27" height="27" viewBox="0 0 42 42" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 19C3 10.1634 10.1634 3 19 3C27.8366 3 35 10.1634 35 19C35 27.8366 27.8366 35 19 35C10.1634 35 3 27.8366 3 19Z"
+                                            stroke="#8B8B8B" stroke-width="5" />
+                                        <path
+                                            d="M34 36.5C34 35.1193 35.1193 34 36.5 34C37.8807 34 39 35.1193 39 36.5C39 37.8807 37.8807 39 36.5 39C35.1193 39 34 37.8807 34 36.5Z"
+                                            stroke="#8B8B8B" stroke-width="5" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of menu -->
+    <!-- end of header -->
+    <section>
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between line">
+                <div class="row w-100">
+                    <div class="col-sm-12">
+                        <div class="d-flex flex-row variant">
+                            <div class="d-flex">
+                                <div class="variant-img">
+                                    <img src="img/Vector(2).png" alt="">
+                                </div>
+                                <div class="variant-txt">
+                                    <h5>
+                                        خودرو
+                                    </h5>
+                                </div>
+                                <div class="variant-txt2">
+                                    <h5>
+                                        خرید خودرو
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="undo d-flex">
+                                <img src="img/Vector(1).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start of main -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="big-box">
+                        <div class="d-flex flex-row box1">
+                            <div class="color-txt text-after1">
+                                <span>
+                                    صفر
+                                </span>
+                            </div>
+                            <div class="text-after">
+                                <span>
+                                    کارکرده
+                                </span>
+                            </div>
+                            <div>
+                                همه
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column brand">
+                            <div class="d-flex flex-row justify-content-between txt-brand">
+                                <div>
+                                    <span>
+                                        انتخاب برند
+                                    </span>
+                                </div>
+                                <div class="btn-arrow">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between txt-brand">
+                                <div>
+                                    <span>
+                                        انتخاب مدل
+                                    </span>
+                                </div>
+                                <div class="btn-arrow">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column box-price">
+                            <div class="d-flex flex-row dollar-sign">
+                                <div>
+                                    <img src="img/Vector(3).png" alt="">
+                                </div>
+                                <div class="txt-price">
+                                    قیمت
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row button">
+                                <div class="btn-price text-center">
+                                    <button>
+                                        100000
+                                    </button>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        تا
+                                    </span>
+                                </div>
+                                <div class="btn-price text-center">
+                                    <button>
+                                        200000
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slidecontainer">
+                                <div class="slider-range-content">
+                                    <div class="progress"></div>
+                                </div>
+                              <div class="slide-range-input">
+                                <input type="range" max="20000" value="5000" 
+                                 step="1000" class="slider-range-right" data-role="doubleslider" oninput="test(this,'simple-range')">
+                                 <!-- <input type="range" class="slide-range-right" oninput="test(this,'simple-range')"  max="20000" value="5000" 
+                                 step="1000" data-role="doubleslider" > -->
+                                <input type="range" max="20000" value="15000" step="1000" class="slider-range-left" data-role="doubleslider" oninput="test(this,'simple-range-left')">
+                              </div>
+                                <div class="d-flex flex-row justify-content-around number1">
+                                    <div>
+                                        <span id="simple-range">
+                                            5000
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span id="simple-range-left">
+                                            15000
+                                        </span>
+                                    </div>
+                                </div> 
+                              </div>
+                        </div>
+                        <div class="d-flex flex-column box-price">
+                            <div class="d-flex flex-row dollar-sign">
+                                <div>
+                                    <img src="img/Vector(3).png" alt="">
+                                </div>
+                                <div class="txt-price">
+
+                                    کارکرد
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row button">
+                                <div class="btn-price">
+                                    <button>
+                                        100000
+                                    </button>
+                                </div>
+                                <div class="text">
+                                    <span>
+                                        تا
+                                    </span>
+                                </div>
+                                <div class="btn-price">
+                                    <button>
+                                        200000
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slidecontainer">
+                                <div class="slider-range-content">
+                                    <div class="progress"></div>
+                                </div>
+                              <div class="slide-range-input">
+                                <input type="range" max="20000" value="5000" 
+                                 step="1000" class="slider-range-right" id="input-range2" data-role="doubleslider" oninput="test(this,'demo-range')">
+                                <input type="range" max="20000" value="15000" step="1000" class="slider-range-left" id="input-range-left" data-role="doubleslider" oninput="test(this,'demo-range-left')">
+                              </div>
+                                <div class="d-flex flex-row justify-content-around number1">
+                                    <div>
+                                        <span id="demo-range">
+                                            5000
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <span id="demo-range-left">
+                                            15000
+                                        </span>
+                                    </div>
+                                </div> 
+                              </div>
+                        </div>
+                        <div class="d-flex flex-column choose-item">
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#citydropdown" class="space-svg-icon">
+                                    <span>شهر</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="citydropdown">
+                                    <a href="#" >اراک</a>
+                                    <a href="#">تهران</a>
+                                    <a href="#">رشت</a>
+                                    <a href="#">رشت</a>
+                                    <a href="#">کرج</a>
+                                    <a href="#">ایلام</a>
+                                    <a href="#">شیراز</a>
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#buyerdropdown" class="space-svg-icon">
+                                    <span>فروشنده</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="buyerdropdown">
+                                    <a href="#" >فروشنده1</a>
+                                    <a href="#">فروشنده2</a>
+                                    <a href="#">فروشنده3</a>
+                                    <a href="#">فروشنده4</a>
+                                    <a href="#">فروشنده5</a>
+                                    <a href="#">فروشنده6</a>
+                                    <a href="#">فروشنده7</a>
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#chassisdropdown" class="space-svg-icon">
+                                    <span>بدنه</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="chassisdropdown">
+                                    <a href="#" >بدنه1</a>
+                                    <a href="#">بدنه2</a>
+                                    <a href="#">بدنه3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#gearboxdropdown" class="space-svg-icon">
+                                    <span>گیربکس</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="gearboxdropdown">
+                                    <a href="#" >گیربکس1</a>
+                                    <a href="#">گیربکس2</a>
+                                    <a href="#">گیربکس3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#colordropdown" class="space-svg-icon">
+                                    <span>رنگ</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="colordropdown">
+                                    <a href="#" >رنگ1</a>
+                                    <a href="#">رنگ2</a>
+                                    <a href="#">رنگ3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#formdropdown" class="space-svg-icon">
+                                    <span>وضعیت بدنه</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="formdropdown">
+                                    <a href="#" >وضعیت بدنه1</a>
+                                    <a href="#">وضعیت بدنه2</a>
+                                    <a href="#">وضعیت بدنه3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#fueldropdown" class="space-svg-icon">
+                                    <span>سوخت</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="fueldropdown">
+                                    <a href="#" >سوخت1</a>
+                                    <a href="#">سوخت2</a>
+                                    <a href="#">سوخت3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#cylinderdropdown" class="space-svg-icon">
+                                    <span>سیلندر</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="cylinderdropdown">
+                                    <a href="#" >سیلندر1</a>
+                                    <a href="#">سیلندر2</a>
+                                    <a href="#">سیلندر3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#capacitydropdown" class="space-svg-icon">
+                                    <span>حجم موتور</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="capacitydropdown">
+                                    <a href="#" >موتور1</a>
+                                    <a href="#">موتور2</a>
+                                    <a href="#">موتور3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#difdropdown" class="space-svg-icon">
+                                    <span>دیفرانسیل</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="difdropdown">
+                                    <a href="#" >دیفرانسیل1</a>
+                                    <a href="#">دیفرانسیل2</a>
+                                    <a href="#">دیفرانسیل3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#creationdropdown" class="space-svg-icon">
+                                    <span>تولید</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="creationdropdown">
+                                    <a href="#" >تولید1</a>
+                                    <a href="#">تولید2</a>
+                                    <a href="#">تولید3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#markdropdown" class="space-svg-icon">
+                                    <span>نوع خودرو</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="markdropdown">
+                                    <a href="#" >نوع خودرو1</a>
+                                    <a href="#">نوع خودرو2</a>
+                                    <a href="#">نوع خودرو3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#officedropdown" class="space-svg-icon">
+                                    <span>شرکت</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="officedropdown">
+                                    <a href="#" >شرکت1</a>
+                                    <a href="#">شرکت2</a>
+                                    <a href="#">شرکت3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#countrydropdown" class="space-svg-icon">
+                                    <span>کشور سازنده</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="countrydropdown">
+                                    <a href="#" >کشور1</a>
+                                    <a href="#">کشور2</a>
+                                    <a href="#">کشور3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                            <div class="d-flex line-bottom dropdown-strech">
+                                <div  data-bs-toggle="collapse" href="#specialdropdown" class="space-svg-icon">
+                                    <span>موارد خاص</span>
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-item-cars collapse" id="specialdropdown">
+                                    <a href="#" >موارد خاص1</a>
+                                    <a href="#">موارد خاص2</a>
+                                    <a href="#">موارد خاص3</a>
+                                   
+                                </div>
+                                <div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-12 space-right">
+                    <div class="d-flex flex-row head-main">
+                        <div class="d-flex flex-row">
+                            <div class="img-square">
+                                <button>
+                                    <svg width="29" height="29" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_dii_419_1103)">
+                                        <path d="M5.28163 6.19939C5.73761 4.25545 7.25546 2.73761 9.19939 2.28162C9.98908 2.09639 10.8109 2.09639 11.6006 2.28162C13.5445 2.73761 15.0624 4.25546 15.5184 6.19939C15.7036 6.98908 15.7036 7.81092 15.5184 8.60061C15.0624 10.5445 13.5445 12.0624 11.6006 12.5184C10.8109 12.7036 9.98908 12.7036 9.1994 12.5184C7.25546 12.0624 5.73761 10.5445 5.28163 8.60061C5.09639 7.81092 5.09639 6.98908 5.28163 6.19939Z" fill="white" stroke="white" stroke-width="3"/>
+                                        <path d="M5.28163 22.9992C5.73761 21.0553 7.25546 19.5374 9.19939 19.0814C9.98908 18.8962 10.8109 18.8962 11.6006 19.0814C13.5445 19.5374 15.0624 21.0553 15.5184 22.9992C15.7036 23.7889 15.7036 24.6107 15.5184 25.4004C15.0624 27.3444 13.5445 28.8622 11.6006 29.3182C10.8109 29.5034 9.98908 29.5034 9.1994 29.3182C7.25546 28.8622 5.73761 27.3444 5.28163 25.4004C5.09639 24.6107 5.09639 23.7889 5.28163 22.9992Z" fill="white" stroke="white" stroke-width="3"/>
+                                        <path d="M23.1248 5.8887C23.5019 4.13464 24.8389 2.74488 26.577 2.3001C27.3465 2.10321 28.1531 2.10321 28.9226 2.3001C30.6607 2.74488 31.9977 4.13464 32.3748 5.8887L32.4573 6.27227C32.6171 7.0156 32.6171 7.7844 32.4573 8.52773L32.3748 8.9113C31.9977 10.6654 30.6607 12.0551 28.9226 12.4999C28.1531 12.6968 27.3465 12.6968 26.577 12.4999C24.8389 12.0551 23.5019 10.6654 23.1248 8.9113L23.0423 8.52773C22.8825 7.78441 22.8825 7.0156 23.0423 6.27227L23.1248 5.8887Z" fill="white" stroke="white" stroke-width="3"/>
+                                        <path d="M23.1248 22.6885C23.5019 20.9344 24.8389 19.5447 26.577 19.0999C27.3465 18.903 28.1531 18.903 28.9226 19.0999C30.6607 19.5447 31.9977 20.9344 32.3748 22.6885L32.4573 23.0721C32.6171 23.8154 32.6171 24.5842 32.4573 25.3275L32.3748 25.7111C31.9977 27.4652 30.6607 28.8549 28.9226 29.2997C28.1531 29.4966 27.3465 29.4966 26.577 29.2997C24.8389 28.8549 23.5019 27.4652 23.1248 25.7111L23.0423 25.3275C22.8825 24.5842 22.8825 23.8154 23.0423 23.0721L23.1248 22.6885Z" fill="white" stroke="white" stroke-width="3"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_dii_419_1103" x="0.6427" y="-0.3573" width="36.4345" height="38.3144" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="1.5"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_419_1103"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_419_1103" result="shape"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.38 0"/>
+                                        <feBlend mode="normal" in2="shape" result="effect2_innerShadow_419_1103"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="-1"/>
+                                        <feGaussianBlur stdDeviation="1"/>
+                                        <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                                        <feBlend mode="normal" in2="effect2_innerShadow_419_1103" result="effect3_innerShadow_419_1103"/>
+                                        </filter>
+                                        </defs>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                            <div class="bn-list">
+                                <button>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px"
+                                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row box-choose">
+                            <div class="d-flex flex-row off-on-box">
+                                <div class="icon-off-on">
+                                    <input type="checkbox" id="switch" class="input-cars"/><label for="switch" class="label-cars"></label>
+                                </div>
+                                <div class="txt-box-choose">
+                                    <span>
+                                        عکس دار
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row off-on-box box-mid">
+                                <div class="icon-off-on">
+                                    <input type="checkbox" id="switch2" class="input-cars"/><label for="switch2" class="label-cars"></label>
+                                </div>
+                                <div class="txt-box-choose">
+                                    <span>
+                                        عکس دار
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row box-choose-cars dropdown-items-new">
+                                <div class="txt-box-choose dropitems" onclick="chooseNew()">
+                                    <span>
+                                        جدید ترین ها
+                                    </span>
+                                    <div class="dropdown-box-items" id="drop-box-item">
+                                        <a href="">
+                                            جدیدترین1
+                                        </a>
+                                        <a href="">
+                                            جدیدترین2
+                                        </a>
+                                        <a href="">
+                                            جدیدترین3
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="icon-chevron-down">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29"
+                                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- //create col car -->
+                    <div class="row item-row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car">
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="prop-icon-dollar">
+                                                        <img src="img/Vector(3).png" alt="">
+                                                    </div>
+                                                    <div class="txt-orange">
+                                                        <span>
+                                                            51000000میلیون تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car photo-ribbon-top">
+                                        <div class="ribbon ribbon-top-right">
+                                            <span>
+                                                کارشناسی شده
+                                            </span>
+                                        </div>
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="txt-orange txt-costomize">
+                                                        <span>
+                                                            510000IRD
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <!-- //create col car -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car">
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="prop-icon-dollar">
+                                                        <img src="img/Vector(3).png" alt="">
+                                                    </div>
+                                                    <div class="txt-orange">
+                                                        <span>
+                                                            51000000میلیون تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car photo-ribbon-top">
+                                        <div class="ribbon ribbon-top-right">
+                                            <span>
+                                                کارشناسی شده
+                                            </span>
+                                        </div>
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="txt-orange txt-costomize">
+                                                        <span>
+                                                            510000IRD
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car">
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column  prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="prop-icon-dollar">
+                                                        <img src="img/Vector(3).png" alt="">
+                                                    </div>
+                                                    <div class="txt-orange">
+                                                        <span>
+                                                            51000000میلیون تومان
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column">
+                                    <div class="photo-car photo-ribbon-top">
+                                        <div class="ribbon ribbon-top-right">
+                                            <span>
+                                                کارشناسی شده
+                                            </span>
+                                        </div>
+                                        <img src="img/image 16.png" alt="">
+                                    </div>
+                                    <div class="d-flex flex-row box-gallery">
+                                        <div class="d-flex flex-row">
+                                            <div class="gallery">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="gallery txt-gallery">
+                                                <span>
+                                                    نمایشگاه
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row txt-card">
+                                            <span>
+                                                یک هفته پیش
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-logo">
+                                        <div class="d-flex flex-row border-content">
+                                            <div class="d-flex flex-column prop-logo-item">
+                                                <div class="prop-logo-txt">
+                                                    <span>
+                                                        BMW 510
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-row prop-price-txt">
+                                                    <div class="txt-orange txt-costomize">
+                                                        <span>
+                                                            510000IRD
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="prop-logo-box">
+                                                <img src="img/BMW (1).png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row component-box-car">
+                                        <div class="d-flex flex-column feature-component">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        Rear-wheel Drive
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row">
+                                                <div class="component-icon-car">
+                                                    <button>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                            fill="currentColor" class="bi bi-asterisk"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="txt-component-box">
+                                                    <span>
+                                                        2020
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row address">
+                                        <div class="d-flex flex-row">
+                                            <div class="component-icon-car">
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                                        <path
+                                                            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="txt-address">
+                                                <span>
+                                                    تهران.خیابان فاطمیه...
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row">
+                                            <div class="viewer">
+                                                <span>556</span>
+                                                <button>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                                        <path
+                                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="footer-img2 img-car">
+                                <img src="img/image 15 (1).png" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- end of main -->
+    <!-- start of footer -->
+    <footer>
+        <section class="footer">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-row social-media">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telegram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                </svg>
+                            </button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row footer-copy">
+                        <div class="txt-footer">
+                            <div class="txt-after">
+                                <a href="#"> پشتیبانی </a>
+                            </div>
+                            <div class="txt-after">
+                                <a href="#"> تماس با ما </a>
+                            </div>
+                            <div>
+                                <a href="#"> درباره ما </a>
+                            </div>
+                        </div>
+                        <div class="copy-txt">©2022 ONEYAR. Ltd.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- end of footer -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
